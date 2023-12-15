@@ -1,0 +1,13 @@
+<h1>Bugungi ob-havo ma'lumoti</h1>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="city" placeholder="Shaharni tanlang.">
+    <button type="submit">Qidirish</button>
+</form>
+<H4> Sizning shahringiz-{{city}}</H4>
+<H4> Davlat kodi-{{country_code}}</H4>
+<H4>Bosim-{{pressure}}hPa</H4>
+<H4>Namlik-{{humidity}}%</H4>
+<H4>Temperatura-{{temp}}C</H4>
+
+
